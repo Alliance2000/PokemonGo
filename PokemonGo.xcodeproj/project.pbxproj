@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C982BA852016E60F00828AF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C982BA842016E60F00828AF9 /* MapKit.framework */; };
 		C985DA7520146975006DAFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985DA7420146975006DAFDD /* AppDelegate.swift */; };
 		C985DA7720146975006DAFDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985DA7620146975006DAFDD /* ViewController.swift */; };
 		C985DA7A20146975006DAFDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C985DA7820146975006DAFDD /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C982BA842016E60F00828AF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C985DA7120146975006DAFDD /* PokemonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C985DA7420146975006DAFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C985DA7620146975006DAFDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C982BA852016E60F00828AF9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C982BA832016E60E00828AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C982BA842016E60F00828AF9 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C985DA6820146975006DAFDD = {
 			isa = PBXGroup;
 			children = (
 				C985DA7320146975006DAFDD /* PokemonGo */,
 				C985DA7220146975006DAFDD /* Products */,
+				C982BA832016E60E00828AF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P25V3DPBM4;
 				INFOPLIST_FILE = PokemonGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venor.net.PokemonGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P25V3DPBM4;
 				INFOPLIST_FILE = PokemonGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venor.net.PokemonGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
