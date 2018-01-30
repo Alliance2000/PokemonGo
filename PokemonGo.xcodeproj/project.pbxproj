@@ -16,6 +16,7 @@
 		C985DA7F20146975006DAFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C985DA7E20146975006DAFDD /* Assets.xcassets */; };
 		C985DA8220146975006DAFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C985DA8020146975006DAFDD /* LaunchScreen.storyboard */; };
 		C9AA3E2920201A4A002D77F1 /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AA3E2820201A4A002D77F1 /* CoreDataHelp.swift */; };
+		C9AA3E2B20202C02002D77F1 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AA3E2A20202C02002D77F1 /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C985DA8120146975006DAFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C985DA8320146975006DAFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AA3E2820201A4A002D77F1 /* CoreDataHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
+		C9AA3E2A20202C02002D77F1 /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				C985DA7620146975006DAFDD /* ViewController.swift */,
 				C982BA862016F54900828AF9 /* PokedexViewController.swift */,
 				C9AA3E2820201A4A002D77F1 /* CoreDataHelp.swift */,
+				C9AA3E2A20202C02002D77F1 /* PokeAnnotation.swift */,
 				C985DA7820146975006DAFDD /* Main.storyboard */,
 				C985DA7E20146975006DAFDD /* Assets.xcassets */,
 				C985DA8020146975006DAFDD /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C985DA7720146975006DAFDD /* ViewController.swift in Sources */,
+				C9AA3E2B20202C02002D77F1 /* PokeAnnotation.swift in Sources */,
 				C982BA872016F54900828AF9 /* PokedexViewController.swift in Sources */,
 				C985DA7520146975006DAFDD /* AppDelegate.swift in Sources */,
 				C9AA3E2920201A4A002D77F1 /* CoreDataHelp.swift in Sources */,
