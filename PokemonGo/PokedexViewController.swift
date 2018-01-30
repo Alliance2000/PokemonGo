@@ -11,11 +11,17 @@ import UIKit
 class PokedexViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
+    var caughtPokemons : [Pokemon] = []
+    var uncaughtPokemons : [Pokemon] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        caughtPokemons = getAllCaughtPokemons()
+        uncaughtPokemons = getAllUncaughtPokemons()
+        
     }
 
     
