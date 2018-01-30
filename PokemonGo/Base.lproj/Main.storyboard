@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huC-fS-KT7">
-                                <rect key="frame" x="305" y="40" width="50" height="50"/>
+                                <rect key="frame" x="285" y="40" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Sfc-hN-a6g"/>
                                     <constraint firstAttribute="width" constant="50" id="mFw-zm-eNL"/>
@@ -47,7 +47,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="huC-fS-KT7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5M7-bF-4hi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huC-fS-KT7" secondAttribute="trailing" constant="20" id="SVx-ix-9P9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huC-fS-KT7" secondAttribute="trailing" constant="40" id="SVx-ix-9P9"/>
                             <constraint firstItem="zSO-oR-hJN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WwJ-SL-swU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ezL-E0-6sH" secondAttribute="bottom" constant="20" id="X5b-K0-NQu"/>
                             <constraint firstItem="zSO-oR-hJN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ghM-IA-Gbp"/>
