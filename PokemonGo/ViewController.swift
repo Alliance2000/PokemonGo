@@ -92,6 +92,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        mapView.deselectAnnotation(view.annotation!, animated: true)
+        
+        if view.annotation! is MKUserLocation {
+            return
+        }
+        
+        let region = MKCoordinateRegionMakeWithDistance(view.annotation!.coordinate, 200, 200)
+        mapView.setRegion(region, animated: true)
+        
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: {(timer) in
+        
+        if let coord = self.manager.location?.coordinate {
+            if MKMapRectContainsPoint(mapView.visibleMapRect, MKMapPointForCoordinate(coord)) {
+                // can catch the Pokemon
+                
+                let pokemon = (view.annotation as! PokeAnnotation).pokemon
+                pokemon.caught = true
+                (UIApplication.shared.delegate as! AppDelegate).saveContext()
+                
+            } else {
+                // can not catch the Pokemon
+            }
+        }
+        })
+    }
+    
+    
     @IBAction func centerTapped(_ sender: Any) {
         if let coord = manager.location?.coordinate {
         let region = MKCoordinateRegionMakeWithDistance(coord, 200, 200)
